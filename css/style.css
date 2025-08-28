@@ -2,6 +2,32 @@
 * {
     scroll-behavior: smooth;
     margin: 0;
-    line-height: 1.6;
+    padding: 0;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+/*--Container com a estrutura base--*/
+#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header"
+                          "nav"
+                          "main"
+                          "section"
+                          "footer";
+}
+
+header{grid-area: header;}
+
+nav{grid-area: nav;}
+
+main{grid-area: main;}
+
+section{grid-area: section; margin-bottom: 10%;}
+
+footer{grid-area: footer;}
