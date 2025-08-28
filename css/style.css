@@ -1,4 +1,4 @@
-/*---------------------GERAL---------*/
+/*--------------------------------------------------------GERAL---------*/
 * {
     scroll-behavior: smooth;
     margin: 0;
@@ -57,7 +57,7 @@ footer{grid-area: footer;}
     }
 }
 
-
+/*--------------------------------------------------------MAIN------------*/
 /*--------CARROSSEL*/
 .carrossel {
   display: flex;
@@ -80,3 +80,33 @@ footer{grid-area: footer;}
   flex: 0 0 auto;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
+/*---Banner*/
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+    margin: 2rem 0;
+}
+
+.banner img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Placeholder para a imagem (remover quando tiver sua imagem real) */
+.banner-placeholder {
+            width: 80%;
+            height: 250px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 8px;
+        }
