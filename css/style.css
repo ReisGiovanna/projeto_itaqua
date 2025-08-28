@@ -56,3 +56,29 @@ footer{grid-area: footer;}
             "footer footer footer";
     }
 }
+
+
+
+
+
+.carrossel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;    /* Scroll horizontal */
+  scroll-snap-type: x mandatory; /* Travar card por card */
+  padding: 20px;
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none; /* Esconde a barra de rolagem (opcional) */
+}
+
+.card {
+  min-width: 250px;  /* largura fixa para cada card */
+  height: 150px;
+  background: #ddd;
+  border-radius: 10px;
+  scroll-snap-align: start; /* Snap de cada card */
+  flex: 0 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
