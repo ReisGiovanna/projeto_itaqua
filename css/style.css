@@ -191,3 +191,186 @@ footer {
     font-size: 0.9rem;
     color: #95a5a6;
 }
+
+/*--------------------------------------------------------CONTATO------------*/
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.page-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Seção de contato */
+.contato-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-container, .info-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Formulário */
+.form-container h2, .info-container h2, .faq h2, .mapa h2 {
+    color: #1a2530;
+    margin-bottom: 1rem;
+    border-left: 5px solid #f1c40f; /* amarelo de destaque */
+    padding-left: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select, form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    background: #fff;
+    transition: border 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #3498db; /* azul */
+    outline: none;
+}
+
+.btn-enviar {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background: #217dbb;
+    transform: translateY(-2px);
+}
+
+/* Informações de contato */
+.info-container ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.info-container li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+.info-container i {
+    color: #3498db;
+    margin-right: 8px;
+}
+
+/* Botões rápidos */
+.contato-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contato-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: #fff;
+}
+
+.btn-whatsapp:hover {
+    background: #1eb54a;
+}
+
+.btn-mapa {
+    background: #f1c40f;
+    color: #000;
+}
+
+.btn-mapa:hover {
+    background: #d4aa0c;
+}
+
+/* Mapa */
+.mapa {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.mapa iframe {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* FAQ */
+.faq {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-item h3:hover {
+    color: #3498db;
+}
+
+.faq-item p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,97 @@
     <!--LINKS CSS E JS-->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js"></script>
+
+    <!--Font Awesome para ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1 class="page-title">Fale Conosco</h1>
+        <p class="page-subtitle">Tem dúvidas? Estamos prontos para ajudar você!</p>
+    </header>
 
     <nav></nav>
 
-    <main></main>
+    <main>
+        <section class="contato-section">
+            <!-- FORMULÁRIO -->
+            <div class="form-container">
+                <h2>Envie sua mensagem</h2>
+                <form action="enviar.php" method="post">
+                    <label for="nome">Nome*</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone">
+
+                    <label for="assunto">Assunto*</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione...</option>
+                        <option value="inscricao">Inscrição em Cursos</option>
+                        <option value="duvidas">Dúvidas Gerais</option>
+                        <option value="sugestoes">Sugestões</option>
+                        <option value="reclamacoes">Reclamações</option>
+                    </select>
+
+                    <label for="mensagem">Mensagem*</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <!-- INFORMAÇÕES DE CONTATO -->
+            <div class="info-container">
+                <h2>Informações de Contato</h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Principal, 1234 - Itaquá/SP</li>
+                    <li><i class="fas fa-phone"></i> (11) 3456-7890</li>
+                    <li><i class="fas fa-envelope"></i> contato@projovem.org</li>
+                    <li><i class="fas fa-clock"></i> Seg à Sex: 8h às 18h</li>
+                </ul>
+
+                <!-- BOTÕES RÁPIDOS -->
+                <div class="contato-links">
+                    <a href="https://wa.me/551134567890" target="_blank" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Atendimento via WhatsApp
+                    </a>
+                    <a href="local.html" class="btn-mapa">
+                        <i class="fas fa-map"></i> Como chegar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAPA GOOGLE -->
+        <section class="mapa">
+            <h2>Nossa Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=..." 
+                width="100%" height="350" style="border:0;" 
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- FAQ SIMPLES -->
+        <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3>📌 Como faço minha inscrição?</h3>
+                <p>Você pode se inscrever diretamente pelo site na página de cursos ou presencialmente em nossa unidade.</p>
+            </div>
+            <div class="faq-item">
+                <h3>📌 Quais documentos preciso levar?</h3>
+                <p>Documento de identidade, CPF e comprovante de residência atualizado.</p>
+            </div>
+            <div class="faq-item">
+                <h3>📌 Existe limite de idade?</h3>
+                <p>O programa é voltado para jovens de 15 a 29 anos.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -57,6 +141,5 @@
             <p>&copy; 2025 ProJovem - Todos os direitos reservados.</p>
         </div>
     </footer>
-    
 </body>
 </html>
