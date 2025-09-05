@@ -374,3 +374,137 @@ form input:focus, form select:focus, form textarea:focus {
     color: #555;
     line-height: 1.5;
 }
+
+/*--------------------------------------------------------CATÁLOGO DE CURSOS------------*/
+.catalogo-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.curso-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-5px);
+}
+
+.curso-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.curso-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #2c3e50;
+}
+
+.curso-card p {
+    color: #555;
+    font-size: 0.95rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-saiba-mais {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+    background: #217dbb;
+}
+
+/*--------------------------------------------------------CURSO INDIVIDUAL------------*/
+.curso-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(180deg, #6a11cb, #2575fc); /* degrade roxo-azul */
+    color: #fff;
+}
+
+.curso-infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.curso-infos div {
+    font-size: 1rem;
+    color: #333;
+}
+
+.curso-detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    align-items: center;
+}
+
+.curso-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.curso-img img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.curso-descricao {
+    flex: 2;
+    min-width: 300px;
+}
+
+.curso-descricao h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.curso-descricao p {
+    margin-bottom: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn-inscricao {
+    background: #f1c40f;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-inscricao:hover {
+    background: #d4aa0c;
+    transform: translateY(-2px);
+}
